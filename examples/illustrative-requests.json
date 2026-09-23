@@ -1,0 +1,22 @@
+{
+  "notice": "FICTIONAL PUBLIC DEMO DATA. Not an exported production payload or a runnable workflow.",
+  "example_structured_text": {
+    "request_id": "portfolio_scene_001",
+    "prompt": "For a fictional 30-second coffee-shop video, return an object with a title and three short scene descriptions. Do not use real customer information.",
+    "output_format": "json",
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "scenes": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["title", "scenes"],
+      "additionalProperties": false
+    }
+  },
+  "example_image": {
+    "request_id": "portfolio_image_001",
+    "prompt": "Illustration of a fictional cozy coffee shop with morning light; no logos, people, or copyrighted characters.",
+    "reference_images": []
+  }
+}
